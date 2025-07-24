@@ -1,0 +1,7 @@
+services:
+  - type: cron
+    name: backup-to-telegram
+    runtime: python
+    schedule: "@daily"
+    buildCommand: ""
+    startCommand: "python backup_to_telegram.py"
